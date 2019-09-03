@@ -1,0 +1,36 @@
+//简单的a+b。。
+
+#include<iostream>
+using namespace std;
+int main()
+{
+	int a, b, c;
+	cin >> a >> b;
+	c = a + b;
+	cout << c;
+	return 0;
+}
+
+//还看到个大佬用递归？不知道为啥要这么写
+//可能我以后就懂了吧
+#include<iostream>
+using namespace std;
+
+long long dg(long long a)
+{
+	if (a < 5)return a;
+	else
+		return dg(a) + dg(a / 2);
+}
+int main()
+{
+	long long a, b;
+	cin >> a >> b;
+	long long c = dg(a) + dg(b);
+	cout << c << endl;
+	return 0;
+}
+
+//题解里面还有大佬各种佛洛依德，迪
+//杰斯特拉，二分之类的，目前都看不懂
+//……总之先写这些吧，之后如果懂了再补充
