@@ -1,0 +1,19 @@
+//这个是简化过的代码，里面用了c > d和c > 8两个条件同时判别
+//很巧妙，我第一次做的时候先挑8小时以上然后再挑最大值……太蠢了
+
+#include <iostream>
+
+using namespace std;
+int main()
+{
+	int i, a, b, c, d = 0, day = 0;
+	for (i = 1; i < 8; i++)
+	{
+		cin >> a >> b;
+		c = a + b;
+		if ((c > d) && (c > 8))
+			d = c, day = i;
+	}
+		cout<<day;
+		return 0;
+}
